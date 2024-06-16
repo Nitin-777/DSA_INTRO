@@ -23,6 +23,10 @@ int main()
         cout<<"Answer is : "<<a*b;
         break;
 
+        case '/' :
+        cout<<"Answer is : "<<a/b;
+        break;
+
         case '%' :
         cout<<"Answer is : "<<a%b;
         break;
