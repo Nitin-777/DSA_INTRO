@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "linked_list3.C": "cpp"
+        "linked_list3.C": "cpp",
+        "iostream": "cpp"
     }
 }
