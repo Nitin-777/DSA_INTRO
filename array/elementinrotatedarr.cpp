@@ -18,9 +18,7 @@ int Pivot(int arr[],int size){
    return start;
 }
  
- int Binarysearch(int arr[],int size,int key){
-    int start=0;
-    int end=size-1;
+ int Binarysearch(int arr[],int size,int start,int end,int key){
     int mid=start+(end-start)/2;
     while(start<=end){
         if(arr[mid]==key){
@@ -37,16 +35,13 @@ int Pivot(int arr[],int size){
     return -1;
  }
  int checkelement(int arr[],int size,int key){
-    int start=0;
-    int end=size-1;
       int pivot=Pivot(arr,5);
     if(arr[pivot]<=key && key<=arr[size-1])
     {
-            start=pivot;
-            Binarysearch(arr,size,key);
+         Binarysearch(arr,size,pivot,size-1,key);
     }
     else{
-        Binarysearch(arr,size,key);
+         Binarysearch(arr,size,0,pivot,key);
     }
 
  }
@@ -55,6 +50,6 @@ int Pivot(int arr[],int size){
 int main(){
     int key; int size;
     int arr[5]={9,10,3,4,5};
-    cout<<checkelement(arr,5,4);
+    cout<<checkelement(arr,5,9);
     return 0;
 }
