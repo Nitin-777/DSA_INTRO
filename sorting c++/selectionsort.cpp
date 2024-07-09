@@ -9,7 +9,7 @@ void swap(int &a,int &b){
 void selectionsort(int arr[],int size){
       for(int i=0; i<(size-1); i++){
         int minIndex=i;
-        for(int j=1+1; j<size;j++){
+        for(int j=i+1; j<size;j++){
             if(arr[j]<arr[minIndex]){
                 minIndex=j;
             }
