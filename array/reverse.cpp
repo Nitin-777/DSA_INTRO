@@ -7,10 +7,15 @@ void swap(int &a,int &b){
 }
 int main()
 {
+
     int size;
+    cout<<"size";
     cin>>size;
+    int m;
+    cout<<"index";
+    cin>>m;
     int arr[size]={1,2,3,4,5};
-    int start=0;
+    int start=m;
     int end=size-1;
     while(start<=end){
         swap(arr[start],arr[end]);
