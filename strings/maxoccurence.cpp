@@ -1,4 +1,5 @@
 #include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 char maxOccurence(string s){
     int arr[26]={0};
@@ -22,7 +23,8 @@ return ans1;
 int main()
 {
     string s;
-    cin>>s;
+    int length=s.length();
+    getline(cin,s);
     cout<<maxOccurence(s);
     return 0;
 }
